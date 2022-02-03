@@ -91,11 +91,36 @@ a {
   display: inline-block;
   color: #fff;
   text-decoration: none; 
+  -webkit-transition: all  ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+}
+
+a:hover {
+  color: #ffa500;
 }
 
 li {
   display: inline-block;
   list-style-type: none;
+}
+
+/* font colors  */
+.pink {
+color: #FF8282;
+}
+
+.white {
+  color: #fff;
+}
+
+/* fot headers  */
+.headertext {
+  font-size: 58px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
 }
 
 /*for wrapper*/
@@ -108,27 +133,104 @@ li {
   Header styling starts here
 =================================*/
 header {
-  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 header .wrapper {
+  padding: 30px 0 22px 0;
   display: flex;
+  align-items: center;
+  border-bottom: 3px solid #fff;
 }
 
 .logo a {
-  font-size: 48px;
+  font-size: 54px;
   font-style: italic;
 }
 
-.menu {
-  margin-left: auto;
-  font-size: 15px;
+.logo a:hover {
+  color: #fff;
 }
 
 
+.hamburger,
+.cross {
+  margin-left: auto;
+  display: none;
+  text-indent: -9999px; 
+}
+
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  float: right;
+  color: #000;
+  font-family: "fontAwesome";
+  text-indent: 0;
+}
+
+.cross::before {
+  content: "\f00d";
+}
 
 
+.menu {
+  margin:24px 0 0 auto;
+  align-self: flex-start;
+  font-size: 15px;
+}
 
+.menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.menu ul li a {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.header-icons {
+  margin: 0 17px 0 43px;
+}
+
+.header-icons ul {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.drop::after {
+  content: "\f078";
+  margin-left: 14px;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 6px;
+  cursor: pointer;
+}
+
+.header-icons ul li a {
+  text-indent: -9999px;
+}
+
+.header-icons ul li a::before {
+  content: "\f290";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 27px;
+  text-indent: 0;
+}
+
+.header-icons ul li:nth-child(2) a::before {
+  content: "\f002";
+  margin-top: 10px;
+  align-self: flex-start;
+  font-size: 16px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -137,13 +239,217 @@ header .wrapper {
   main styling starts here
 =================================*/
 
+/* banner styling start  */
+.banner {
+  position: relative;;
+}
+/* banner styling end  */
+/* fresh new designs start  */
+.fresh-new-designs {
+  background-color: #B5C4CC;
+}
 
+.fresh-new-designs .wrapper {
+  padding: 85px 0 39px 0;
+}
+.fresh-designs-photos {
+  margin-top: 68px;
+  display: flex;
+  column-gap: 25px;
+}
 
+.fresh-designs-photos figure {
+  border: 14px solid #fff;
+  box-shadow: 5px 5px #919190;
+  box-sizing: border-box;
+}
 
+.fresh-designs-photos-col1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
 
+.fresh-designs-photos-col2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
 
+.fresh-designs-slider {
+  background-color: #1C1C1C;
+}
 
+.fresh-designs-slider .wrapper {
+  width: 92.6%;
+}
 
+.slider-content1 {
+  display: flex;
+  column-gap: 59px;
+}
+
+.slider-content2,.slider-content3,.slider-content4,.slider-content5 {
+  display: none;
+}
+.elipse {
+  flex-basis: 8.6%;
+  display: block;
+  font-size: 217px;
+}
+
+.fresh-designs-slider p {
+  width: 66%;
+  font-size: 31px;
+  font-style: italic;
+  line-height: 47px;
+}
+
+.slider-image {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.slider-image figure img{
+  border-radius: 100%;
+}
+
+.slider-name,.slider-url {
+  display: block;
+}
+
+.slider-name {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.slider-name span {
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.slider-url {
+  margin-top: 1px;
+  font-size: 17px;
+}
+
+.leftslider,.rightslider {
+  padding: 0 2px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.leftslider::before,.rightslider::before {
+  content: "\f191";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 39px;
+  cursor: pointer;
+  text-indent: 0;
+}
+
+.rightslider::before {
+  content: "\f152";
+}
+
+.slider-controls {
+  margin-left: 167px;
+  display: flex;
+  align-items: center;
+  column-gap: 200px;
+}
+
+.slider-buttons {
+  margin-left: 214px;
+}
+
+.slider-buttons li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FF8282;
+  border-radius: 100%;
+  display: inline-block;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.slider-buttons li:hover {
+  background-color: #FF8282;
+}
+/* fresh new designs end  */
+/* meet our authors start  */
+.meet-our-authors {
+  background-color: #B5C4CC;
+}
+
+.meet-our-authors .wrapper {
+  padding: 120px 0 70px 0;
+}
+
+.authorslist {
+  margin-top: 87px;
+  display: flex;
+  column-gap: 62px;
+}
+
+.author-info {
+  text-align: center;
+}
+
+.author-info figure img{
+  border-radius: 100%;
+}
+
+.author-name,.author-role {
+  display: block;
+  line-height: 25px;
+}
+
+.author-name {
+  margin-top: 10px;
+}
+/* meet our authors end  */
+/* top selling designs start  */
+.top-selling-designs {
+  background-color: #B5C4CC;
+}
+
+.top-selling-designs .wrapper {
+  padding: 59px 0 163px 0;
+}
+
+.selling-designs-list {
+  margin-top: 108px;
+  display: flex;
+  column-gap: 34px;
+}
+
+.selling-design {
+  background-color: #fff;
+  box-shadow: 7px 7px #919190;
+}
+
+.design-info {
+  margin-left: 16px;
+}
+
+.design-price {
+  display: inline-block;
+}
+
+.cancelled-price {
+  text-decoration-line: line-through;
+  text-decoration-color: #FF8282;
+}
+
+.design-name {
+  margin: 25px 0 14px 0;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* top selling designs end  */
 /*=================================
   main styling ends here
 =================================*/
@@ -151,21 +457,174 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  position: relative;
+  background-color: #1C1C1C;
+}
 
+footer .wrapper {
+  padding: 72px 0 0 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  column-gap: 128px;
+}
 
+.footer-title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
+.about-info {
+  font-size: 17px;
+  line-height: 24px;
+}
 
+.footer-blog:first-child {
+  flex-basis: 27%;
+}
 
+.footer-blog:nth-child(3) {
+  margin-left: 208px;
+}
 
+.demos {
+  padding: 15px 28px 26px 67px;
+  position: absolute;
+  top: 89.8%;
+  right: 0;
+  background-color: #1C1C1C;
+  color: #969592;
+  font-size: 15px;
+  z-index: 1;
+}
 
+.demos::after {
+  content: "\f078";
+  margin-left: 46px;
+  color: #969592;
+  font-family: "fontAwesome";
+  font-weight: 13px;
+}
+
+.footer-bar {
+  width: 88.5%;
+  margin-top: 136px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-bar .wrapper {
+  padding: 6px 0;
+  column-gap: 0;
+}
+.footer-icons {
+  display: flex;
+  column-gap: 23px;
+}
+
+.footer-icons li a {
+  text-indent: -9999px;
+}
+
+.footer-icons li a::before {
+  content: "\f09a";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 20px;
+  text-indent: 0;
+}
+
+.footer-icons li:nth-child(2) a::before {
+  content: "\f099";
+}
+
+.footer-icons li:nth-child(3) a::before {
+  content: "\f194";
+}
+
+.footer-icons li:nth-child(4) a::before {
+  content: "\f16d";
+}
+
+.terms {
+  margin-left: 65.2%;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.visa {
+  margin-left: 46px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
+@media only screen and (max-width: 1440px) {
+  .terms {
+    margin-left: 57.2%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header .wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .authorslist {
+    flex-wrap: wrap;
+  }
+
+  .author-info {
+    flex-basis: 30%;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+.selling-designs-list,footer > .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
 
+.fresh-designs-slider p {
+  font-size: 13px;
+  width: auto;
+}
+
+.selling-design {
+  margin: auto;
+}
+.elipse {
+  font-size: 93px;
+}
+
+.slider-controls {
+  column-gap: 0;
+  margin-left: 0;
+}
+
+.footer-blog:nth-child(3) {
+  margin: auto;
+}
+
+.footer-bar {
+  width: auto;
+}
+
+.terms {
+  margin-left: 5%;
+}
 
 }  
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
