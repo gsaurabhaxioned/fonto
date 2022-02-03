@@ -382,25 +382,105 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  position: relative;
+}
+
 footer .wrapper {
   padding: 72px 0 0 0;
+  top: 0;
+  right: 0;
   display: flex;
+  column-gap: 128px;
 }
 
 .footer-title {
+  margin-bottom: 18px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .about-info {
   font-size: 17px;
+  line-height: 24px;
 }
 
-.footer-blog {
+.footer-blog:first-child {
   flex-basis: 27%;
 }
 
+.footer-blog:nth-child(3) {
+  margin-left: 208px;
+}
 
+.demos {
+  padding: 15px 28px 26px 67px;
+  position: absolute;
+  top: 89.8%;
+  right: 0;
+  background-color: #1C1C1C;
+  color: #969592;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.demos::after {
+  content: "\f078";
+  margin-left: 46px;
+  color: #969592;
+  font-family: "fontAwesome";
+  font-weight: 13px;
+}
+
+.footer-bar {
+  width: 88.5%;
+  margin-top: 136px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-bar .wrapper {
+  padding: 6px 0;
+  column-gap: 0;
+}
+.footer-icons {
+  display: flex;
+  column-gap: 23px;
+}
+
+.footer-icons li a {
+  text-indent: -9999px;
+}
+
+.footer-icons li a::before {
+  content: "\f09a";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 20px;
+  text-indent: 0;
+}
+
+.footer-icons li:nth-child(2) a::before {
+  content: "\f099";
+}
+
+.footer-icons li:nth-child(3) a::before {
+  content: "\f194";
+}
+
+.footer-icons li:nth-child(4) a::before {
+  content: "\f16d";
+}
+
+.terms {
+  margin-left: 65.2%;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.visa {
+  margin-left: 46px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
