@@ -340,13 +340,41 @@ header .wrapper {
 }
 /* meet our authors end  */
 /* top selling designs start  */
+.top-selling-designs {
+  background-color: #B5C4CC;
+}
+
 .top-selling-designs .wrapper {
   padding: 59px 0 0 0;
 }
 
-.selling-design {
+.selling-designs-list {
   margin-top: 108px;
   display: flex;
+  column-gap: 34px;
+}
+
+.selling-design {
+  background-color: #fff;
+  box-shadow: 7px 7px #919190;
+}
+
+.design-name,.design-price {
+  display: block;
+}
+
+.design-price:nth-child(4) {
+  display: inline-block;
+}
+
+.design-name {
+  margin: 25px 0 14px 15px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.design-price {
+  margin-left: 15px
 }
 /* top selling designs end  */
 /*=================================
