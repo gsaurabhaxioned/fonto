@@ -256,8 +256,8 @@ header .wrapper {
   text-align: center;
 }
 
-.slider-image figure {
-  border-radius: 50%;
+.slider-image figure img{
+  border-radius: 100%;
 }
 
 .slider-name,.slider-url {
@@ -311,6 +311,34 @@ header .wrapper {
   text-indent: -9999px;
 }
 /* fresh new designs end  */
+/* meet our authors start  */
+.meet-our-authors .wrapper {
+  padding: 120px 0 70px 0;
+}
+
+.authorslist {
+  margin-top: 87px;
+  display: flex;
+  column-gap: 62px;
+}
+
+.author-info {
+  text-align: center;
+}
+
+.author-info figure img{
+  border-radius: 100%;
+}
+
+.author-name,.author-role {
+  display: block;
+  line-height: 25px;
+}
+
+.author-name {
+  margin-top: 10px;
+}
+/* meet our authors end  */
 /*=================================
   main styling ends here
 =================================*/
