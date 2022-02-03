@@ -625,6 +625,20 @@ footer .wrapper {
 
 @media only screen and (max-width: 768px) {
   .menu {
+    width: 100%;
     display: none;
+    background-color: #000;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .menu ul li a:hover {
+    color: #fff;
+  }
+  .hamburger {
+    display: block;
   }
 }
