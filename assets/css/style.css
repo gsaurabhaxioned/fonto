@@ -91,6 +91,10 @@ a {
   display: inline-block;
   color: #fff;
   text-decoration: none; 
+  -webkit-transition: all 1 ease-in-out;
+  -moz-transition: all 1 ease-in-out;
+  -o-transition: all 1 ease-in-out;
+  -ms-transition: all 1 ease-in-out;
 }
 
 a:hover {
@@ -295,6 +299,11 @@ header .wrapper {
 .slider-name {
   margin-top: 15px;
   font-size: 24px;
+}
+
+.slider-name span {
+  display: inline-block;
+  vertical-align: sub;
 }
 
 .slider-url {
@@ -531,7 +540,18 @@ footer .wrapper {
 =================================*/ 
 
 /*media query starts*/
+@media only screen and (max-width: 1440px) {
+  .terms {
+    margin-left: 57.2%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  header .wrapper {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
   .authorslist {
     flex-wrap: wrap;
   }
@@ -544,10 +564,45 @@ footer .wrapper {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
-header.wrapper,.selling-designs-list,footer .wrapper,.footer-bar .wrapper {
+.selling-designs-list,footer > .wrapper {
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
 }
 
+.fresh-designs-slider p {
+  font-size: 13px;
+  width: auto;
+}
+
+.selling-design {
+  margin: auto;
+}
+.elipse {
+  font-size: 93px;
+}
+
+.slider-controls {
+  column-gap: 0;
+  margin-left: 0;
+}
+
+.footer-blog:nth-child(3) {
+  margin: auto;
+}
+
+.footer-bar {
+  width: auto;
+}
+
+.terms {
+  margin-left: 5%;
+}
+
 }  
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
