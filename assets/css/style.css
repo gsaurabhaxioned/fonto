@@ -99,8 +99,9 @@ li {
 }
 /* fot headers  */
 .headertext {
-  font-size: 55px;
+  font-size: 58px;
   font-style: italic;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -182,10 +183,6 @@ header .wrapper {
   content: "\f002";
   font-size: 16px;
 }
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -199,11 +196,23 @@ header .wrapper {
   position: relative;;
 }
 /* banner styling end  */
+/* fresh new designs start  */
+.fresh-new-designs .wrapper {
+  padding: 85px 0 85px 0;
+  display: flex;
+}
+.fresh-designs-photos-col1 {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-
-
+.fresh-designs-photos-col2 {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+}
+/* fresh new designs end  */
 /*=================================
   main styling ends here
 =================================*/
