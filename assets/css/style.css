@@ -93,10 +93,24 @@ a {
   text-decoration: none; 
 }
 
+a:hover {
+  color: #ffa500;
+}
+
 li {
   display: inline-block;
   list-style-type: none;
 }
+
+/* font colors  */
+.pink {
+color: #FF8282;
+}
+
+.white {
+  color: #fff;
+}
+
 /* fot headers  */
 .headertext {
   font-size: 58px;
@@ -122,14 +136,19 @@ header {
 }
 
 header .wrapper {
-  padding: 30px 0;
+  padding: 30px 0 22px 0;
   display: flex;
   align-items: center;
+  border-bottom: 3px solid #fff;
 }
 
 .logo a {
-  font-size: 48px;
+  font-size: 54px;
   font-style: italic;
+}
+
+.logo a:hover {
+  color: #fff;
 }
 
 .menu {
@@ -156,6 +175,7 @@ header .wrapper {
 .header-icons ul {
   display: flex;
   column-gap: 20px;
+  flex-wrap: wrap;
 }
 
 .drop::after {
@@ -181,6 +201,8 @@ header .wrapper {
 
 .header-icons ul li:nth-child(2) a::before {
   content: "\f002";
+  margin-top: 10px;
+  align-self: flex-start;
   font-size: 16px;
 }
 /*=================================
@@ -228,6 +250,10 @@ header .wrapper {
   row-gap: 18px;
 }
 
+.fresh-designs-slider {
+  background-color: #1C1C1C;
+}
+
 .fresh-designs-slider .wrapper {
   width: 92.6%;
 }
@@ -241,6 +267,7 @@ header .wrapper {
   display: none;
 }
 .elipse {
+  flex-basis: 8.6%;
   display: block;
   font-size: 217px;
 }
@@ -248,6 +275,7 @@ header .wrapper {
 .fresh-designs-slider p {
   width: 66%;
   font-size: 31px;
+  font-style: italic;
   line-height: 47px;
 }
 
@@ -266,15 +294,16 @@ header .wrapper {
 
 .slider-name {
   margin-top: 15px;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 .slider-url {
   margin-top: 1px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .leftslider,.rightslider {
+  padding: 0 2px;
   display: inline-block;
   text-indent: -9999px;
 }
@@ -284,6 +313,7 @@ header .wrapper {
   float: right;
   font-family: "fontAwesome";
   font-size: 39px;
+  cursor: pointer;
   text-indent: 0;
 }
 
@@ -305,13 +335,22 @@ header .wrapper {
 .slider-buttons li {
   width: 10px;
   height: 10px;
-  border: 1px solid #000;
+  border: 1px solid #FF8282;
   border-radius: 100%;
   display: inline-block;
+  cursor: pointer;
   text-indent: -9999px;
+}
+
+.slider-buttons li:hover {
+  background-color: #FF8282;
 }
 /* fresh new designs end  */
 /* meet our authors start  */
+.meet-our-authors {
+  background-color: #B5C4CC;
+}
+
 .meet-our-authors .wrapper {
   padding: 120px 0 70px 0;
 }
@@ -367,6 +406,11 @@ header .wrapper {
   display: inline-block;
 }
 
+.cancelled-price {
+  text-decoration-line: line-through;
+  text-decoration-color: #FF8282;
+}
+
 .design-name {
   margin: 25px 0 14px 0;
   display: block;
@@ -384,6 +428,7 @@ header .wrapper {
 =================================*/ 
 footer {
   position: relative;
+  background-color: #1C1C1C;
 }
 
 footer .wrapper {
@@ -486,9 +531,23 @@ footer .wrapper {
 =================================*/ 
 
 /*media query starts*/
+@media only screen and (max-width: 1024px) {
+  .authorslist {
+    flex-wrap: wrap;
+  }
+
+  .author-info {
+    flex-basis: 30%;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
-
+header.wrapper,.selling-designs-list,footer .wrapper,.footer-bar .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
 
 }  
