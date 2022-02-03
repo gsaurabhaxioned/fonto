@@ -345,7 +345,7 @@ header .wrapper {
 }
 
 .top-selling-designs .wrapper {
-  padding: 59px 0 0 0;
+  padding: 59px 0 163px 0;
 }
 
 .selling-designs-list {
@@ -359,23 +359,21 @@ header .wrapper {
   box-shadow: 7px 7px #919190;
 }
 
-.design-name,.design-price {
-  display: block;
+.design-info {
+  margin-left: 16px;
 }
 
-.design-price:nth-child(4) {
+.design-price {
   display: inline-block;
 }
 
 .design-name {
-  margin: 25px 0 14px 15px;
+  margin: 25px 0 14px 0;
+  display: block;
   font-size: 17px;
   font-weight: bold;
 }
 
-.design-price {
-  margin-left: 15px
-}
 /* top selling designs end  */
 /*=================================
   main styling ends here
