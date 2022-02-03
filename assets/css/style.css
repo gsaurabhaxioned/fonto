@@ -202,7 +202,7 @@ header .wrapper {
 }
 
 .fresh-new-designs .wrapper {
-  padding: 85px 0 85px 0;
+  padding: 85px 0 39px 0;
 }
 .fresh-designs-photos {
   margin-top: 68px;
@@ -242,7 +242,7 @@ header .wrapper {
 }
 .elipse {
   display: block;
-  font-size: 280px;
+  font-size: 217px;
 }
 
 .fresh-designs-slider p {
@@ -272,6 +272,43 @@ header .wrapper {
 .slider-url {
   margin-top: 1px;
   font-size: 20px;
+}
+
+.leftslider,.rightslider {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.leftslider::before,.rightslider::before {
+  content: "\f191";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 39px;
+  text-indent: 0;
+}
+
+.rightslider::before {
+  content: "\f152";
+}
+
+.slider-controls {
+  margin-left: 167px;
+  display: flex;
+  align-items: center;
+  column-gap: 200px;
+}
+
+.slider-buttons {
+  margin-left: 214px;
+}
+
+.slider-buttons li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  display: inline-block;
+  text-indent: -9999px;
 }
 /* fresh new designs end  */
 /*=================================
