@@ -382,11 +382,23 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer .wrapper {
+  padding: 72px 0 0 0;
+  display: flex;
+}
 
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+}
 
+.about-info {
+  font-size: 17px;
+}
 
-
-
+.footer-blog {
+  flex-basis: 27%;
+}
 
 
  /*=================================
