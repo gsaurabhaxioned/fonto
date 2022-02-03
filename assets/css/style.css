@@ -125,6 +125,13 @@ header .wrapper {
   font-size: 15px;
 }
 
+.menu ul {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.header icons
 
 
 
